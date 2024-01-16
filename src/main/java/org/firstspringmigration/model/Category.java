@@ -19,4 +19,8 @@ public class Category {
     public Category(String name) {
         this.name = name;
     }
+
+    public Category(Integer id) {
+        this.id = id;
+    }
 }

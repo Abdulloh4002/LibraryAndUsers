@@ -39,7 +39,7 @@ public class CategoryRepository {
     public void updateCategory(Integer id, Category category){
 
         jdbcTemplate.update(
-                "update category set name = ? where id = ?)",
+                "update category set name = ? where id = ?",
                 category.getName(),
                 id
         );
@@ -47,7 +47,8 @@ public class CategoryRepository {
 
     public void deleteCategory(Integer id){
         jdbcTemplate.update(
-                "delete from table category where id = ?",
+                "delete from category" +
+                        " where id = ?",
                 id
         );
     }

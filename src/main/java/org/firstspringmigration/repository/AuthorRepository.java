@@ -44,7 +44,7 @@ public class AuthorRepository {
     public void updateAuthor(Integer id, Author author){
 
         jdbcTemplate.update(
-                "update author set name = ?, surname = ?, address = ? where id = ?)",
+                "update author set name = ?, surname = ?, address = ? where id = ?",
                 author.getName(),
                 author.getSurname(),
                 author.getAddress(),
@@ -54,7 +54,7 @@ public class AuthorRepository {
 
     public void deleteAuthor(Integer id){
         jdbcTemplate.update(
-                "delete from table author where id = ?",
+                "delete from author where id = ?",
                 id
         );
     }

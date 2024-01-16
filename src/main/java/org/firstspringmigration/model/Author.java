@@ -23,4 +23,8 @@ public class Author {
         this.surname = surname;
         this.address = address;
     }
+
+    public Author(Integer id) {
+        this.id = id;
+    }
 }
