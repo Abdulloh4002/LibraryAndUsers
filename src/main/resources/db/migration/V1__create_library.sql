@@ -13,7 +13,7 @@ create table if not exists book(
                                    title varchar(50),
                                    year int,
                                    language varchar(50),
-                                   author_id int references author(id),
-                                   category_id int references category(id)
+                                   author_id int references author(id) on delete cascade,
+                                   category_id int references category(id) on delete cascade
 );
 
